@@ -14135,14 +14135,14 @@
         const formData = new FormData();
         formData.append('file', selectedFile, selectedFile.name);
 
-        fetch('http://127.0.0.1:8080//predict', {
+        fetch('https://other-phyllida-cocotechoes-e02d1a77.koyeb.app/predict', {
           method: 'POST',
           body: formData
         })
           .then(response => response.json())
           .then(data => {
             localStorage.setItem('voiceAnalysisData', JSON.stringify(data));
-            window.location.href = 'http://127.0.0.1:8080/output.html';
+            window.location.href = 'https://other-phyllida-cocotechoes-e02d1a77.koyeb.app/output.html';
           })
           .catch(error => {
             console.error('Error:', error);
@@ -14256,14 +14256,14 @@
         const formData = new FormData();
         formData.append('file', blob, `${filename}.wav`);
 
-        fetch('http://127.0.0.1:8080//predict', {
+        fetch('https://other-phyllida-cocotechoes-e02d1a77.koyeb.app/predict', {
           method: 'POST',
           body: formData
         })
           .then(response => response.json())
           .then(data => {
             localStorage.setItem('voiceAnalysisData', JSON.stringify(data));
-            window.location.href = 'http://127.0.0.1:8080/output.html';
+            window.location.href = 'https://other-phyllida-cocotechoes-e02d1a77.koyeb.app/output.html';
           })
           .catch(error => {
             console.error('Error:', error);
