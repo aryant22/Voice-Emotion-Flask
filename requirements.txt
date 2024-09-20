@@ -12,3 +12,4 @@ scikit-learn
 soxr
 flask-cors
 mysql-connector-python
+ptvsd
