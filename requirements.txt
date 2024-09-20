@@ -1,0 +1,14 @@
+Flask==3.0.3
+gunicorn==22.0.0
+Werkzeug==3.0.3
+requests==2.31.0
+debugpy # Required for debugging.
+librosa
+tensorflow
+numpy
+numba
+llvmlite
+scikit-learn
+soxr
+flask-cors
+mysql-connector-python
